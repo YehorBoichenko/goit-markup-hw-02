@@ -53,6 +53,9 @@ body {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
+/* Contatcs */
+
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);

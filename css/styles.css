@@ -5,27 +5,24 @@
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --tertiary-background-color: #2f303a;
+  --secondary-logo-color: #000000;
 }
 body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
+
   letter-spacing: 0.03em;
 }
 .list {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 /* logo */
 .logo {
-  color: var(--title-text-color);
-  font-family: Raleway, sans-serif;
-
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
-.logo-design {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
 
@@ -33,7 +30,12 @@ body {
   font-size: 26px;
   line-height: 1.2;
 }
-
+.header-design {
+  color: var(--secondary-logo-color);
+}
+.footer-design {
+  color: var(--primary-background-color);
+}
 /* site nav */
 
 .site-nav .link {
@@ -55,7 +57,13 @@ body {
 }
 
 /* Contatcs */
-
+.contacts .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
@@ -66,7 +74,8 @@ body {
 }
 
 /* Hero */
-.hero {
+.hero,
+.hero-title {
   color: var(--primary-background-color);
   background-color: var(--tertiary-background-color);
   font-weight: 900;
@@ -101,6 +110,10 @@ body {
 }
 
 /* feature-list */
+.feature-list {
+  font-size: 14px;
+  line-height: 1.71;
+}
 .feature-list .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -110,16 +123,26 @@ body {
 }
 
 /* our-team */
-.our-team .title {
-  color: var(--title-text-color);
-  background-color: var(--secondary-background-color);
-}
 
 .our-team .section-title {
   background-color: var(--primary-background-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
+}
+.our-team .title {
+  color: var(--title-text-color);
+  background-color: var(--primary-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.our-team .list {
+  font-size: 16px;
+  line-height: 1.18;
   text-align: center;
 }
 
@@ -148,6 +171,7 @@ body {
 .filter {
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;

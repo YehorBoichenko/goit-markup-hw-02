@@ -59,6 +59,7 @@ a {
 /* Contatcs */
 .contacts .link {
   color: var(--primary-text-color);
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -150,12 +151,21 @@ a {
 .footer {
   background-color: var(--tertiary-background-color);
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 }
 
+.contacts .address .link {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.contacts .address .link:hover,
+.contacts .address .link:focus {
+  color: var(--accent-color);
+}
 /* Portfolio */
 
 .main {
